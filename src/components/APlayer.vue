@@ -6,8 +6,8 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
-import "APlayer/dist/APlayer.min.css";
-import APlayer from "APlayer";
+import "aplayer/dist/APlayer.min.css";
+import APlayer from "aplayer";
 const refAplayer = ref(null);
 onMounted(() => {
   const ap = new APlayer({
