@@ -3,9 +3,12 @@
     <div class="content">
       <router-view />
     </div>
+    <a-player />
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import APlayer from "./components/APlayer.vue";
+</script>
 <style scoped>
 #app {
   background: url("assets/bg.jpeg");

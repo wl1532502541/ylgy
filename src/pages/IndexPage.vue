@@ -1,72 +1,50 @@
 <template>
   <div id="indexPage">
-    <h1>🐟 鱼了个鱼</h1>
+    <h1>🐟 源了个源</h1>
     <div style="margin-bottom: 16px">低配版羊了个羊小游戏，仅供消遣</div>
-    <a-button
-      block
-      style="margin-bottom: 16px"
-      @click="toGamePage(easyGameConfig)"
-    >
+    <a-button block style="margin-bottom: 16px" @click="toGamePage(easyGameConfig)">
       简单模式
     </a-button>
-    <a-button
-      block
-      style="margin-bottom: 16px"
-      @click="toGamePage(middleGameConfig)"
-    >
+    <a-button block style="margin-bottom: 16px" @click="toGamePage(middleGameConfig)">
       中等模式
     </a-button>
-    <a-button
-      block
-      style="margin-bottom: 16px"
-      @click="toGamePage(hardGameConfig)"
-    >
+    <a-button block style="margin-bottom: 16px" @click="toGamePage(hardGameConfig)">
       困难模式
     </a-button>
-    <a-button
-      block
-      style="margin-bottom: 16px"
-      @click="toGamePage(lunaticGameConfig)"
-    >
+    <a-button block style="margin-bottom: 16px" @click="toGamePage(lunaticGameConfig)">
       地狱模式
     </a-button>
-    <a-button
-      block
-      style="margin-bottom: 16px"
-      @click="toGamePage(skyGameConfig)"
-    >
+    <a-button block style="margin-bottom: 16px" @click="toGamePage(skyGameConfig)">
       天域模式
     </a-button>
-    <a-button
-      block
-      style="margin-bottom: 16px"
-      @click="toGamePage(yangGameConfig)"
-    >
-      羊了个羊模式
+    <a-button block style="margin-bottom: 16px" @click="toGamePage(yangGameConfig)">
+      源了个源模式
     </a-button>
     <a-button block style="margin-bottom: 16px" @click="() => toGamePage()">
       自定义 🔥
     </a-button>
     <my-ad />
     <div class="footer">
-      鱼了个鱼 ©2022 by
-      <a href="https://github.com/liyupi" target="_blank" style="color: #fff">
-        程序员鱼皮
+      源了个源 ©2022 by
+      <a href="https://github.com/wl1532502541" target="_blank" style="color: #fff">
+        leinaldo
       </a>
       |
-      <a
-        href="https://github.com/liyupi/yulegeyu"
-        target="_blank"
-        style="color: #fff"
-      >
+      <a href="https://github.com/wl1532502541/ylgy" target="_blank" style="color: #fff">
         代码开源
+      </a>
+      |
+      <a href="https://github.com/liyupi/yulegeyu" target="_blank" style="color: #fff">
+        forked from yupi
       </a>
     </div>
   </div>
+  <div id="aplayer"></div>
 </template>
 
 <script setup lang="ts">
 import { useRouter } from "vue-router";
+
 import {
   easyGameConfig,
   middleGameConfig,

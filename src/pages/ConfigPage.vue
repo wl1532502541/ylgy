@@ -4,13 +4,7 @@
       自定义难度
       <a-button style="float: right" @click="doBack">返回</a-button>
     </h2>
-    <a-form
-      ref="formRef"
-      label-align="left"
-      :label-col="{ style: { width: '120px' } }"
-      :model="config"
-      @finish="handleFinish"
-    >
+    <a-form ref="formRef" label-align="left" :label-col="{ style: { width: '120px' } }" :model="config" @finish="handleFinish">
       <a-form-item label="槽容量" name="slotNum">
         <a-input-number v-model:value="config.slotNum" />
       </a-form-item>
@@ -20,9 +14,9 @@
       <a-form-item label="动物数" name="typeNum">
         <a-input-number v-model:value="config.typeNum" />
       </a-form-item>
-      <a-form-item label="动物图案" name="animalStr">
+      <!-- <a-form-item label="动物图案" name="animalStr">
         <a-input v-model:value="config.animalStr" />
-      </a-form-item>
+      </a-form-item> -->
       <a-form-item label="总层数" name="levelNum">
         <a-input-number v-model:value="config.levelNum" />
       </a-form-item>
@@ -39,16 +33,10 @@
         <a-input-number v-model:value="config.randomBlockNum" />
       </a-form-item>
       <a-form-item>
-        <a-button
-          type="primary"
-          html-type="submit"
-          style="margin-bottom: 12px"
-          block
-        >
+        <a-button type="primary" html-type="submit" style="margin-bottom: 12px" block>
           开始
         </a-button>
-        <a-button block style="margin-bottom: 12px" @click="resetForm"
-          >重置
+        <a-button block style="margin-bottom: 12px" @click="resetForm">重置
         </a-button>
         <a-button block danger @click="resetConfig">还原最初配置</a-button>
       </a-form-item>

@@ -133,6 +133,7 @@ const useGame = () => {
         status: 0,
         level: 0,
         type: randomAnimalBlocks[i],
+        // type:1,
         higherThanBlocks: [] as BlockType[],
         lowerThanBlocks: [] as BlockType[],
       } as BlockType;
