@@ -9,4 +9,9 @@ export default defineConfig({
       include: [/\.vue$/],
     }),
   ],
+  build:{
+    rollupOptions:{
+      external:['APlayer']
+    }
+  }
 });
